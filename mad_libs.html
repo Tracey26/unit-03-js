@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1 id="myHeader">This is a header</h1>
+
+        <label for="nameinput">Name:</label>
+        <input id="nameinput"><br><br>
+
+        <label for="verbinput">Verb:</label>
+        <input id="verbinput"><br><br>
+
+        <label for="colorinput">Color:</label>
+        <input type="color" id="colorinput"><br><br>
+
+        <label for="objectinput">Object:</label>
+        <input id="objectinput"><br><br>
+
+        <label for="adjectiveinput">Adjective:</label>
+        <input id="adjectiveinput"><br><br>
+
+        <label for="symptominput">Symptom:</label>
+        <input id="symptominput"><br><br>
+   
+
+        <button onclick="clickMe()">Click Me</button>
+        <span id="nametext"></span>
+       
+    </center>
+
+    <script>
+        let name = document.getElementById("name")
+        let nametext = document.getElementById("nametext")
+
+        function clickMe (){
+            console.log(name.value)
+            nametext.innerText=name.value
+        }
+    </script>
+
+
+    <h1 id="output">
+        <span id="name"></span> was <span id="verb"></span> down the <span id="color"></span> street, when 
+        suddenly they were hit by a <span id="object"></span> and the perpetrator ran off.
+        They continued to walk down to the police station to report the 
+        incident. When they got there, however, the police laughed in their face and 
+        told them to leave
+        Once they left, they were <span id="adjective"></span> and went to go 
+        find the person who had done it. Once they spotted the guy, they realized it was Mr.Bob and ran
+        up to him. Mr.Bob then attacked them this time leaving them <span id="symptom"></span>
+    </h1>
+
+
+
+
+
+</body>
+</html>
